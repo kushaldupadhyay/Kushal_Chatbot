@@ -6,6 +6,7 @@ from streamlit_chat import message
 
 # Function to generate the output
 def generate_response(prompt):
+    #generate your token from bard as it's not sharable 
     bard = Bard('Your token here!!')
     response = bard.get_answer(prompt)['content']
     return response
